@@ -2,7 +2,7 @@
 const cors = require("cors");
 const bodyParser = require("body-parser");
 // const path = require("path");
-const db = require("./db");
+// const db = require("./db");
 // const authRouter = require("./routes/auth");
 // const projectRouter = require("./routes/project");
 
