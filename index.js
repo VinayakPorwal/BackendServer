@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const path = require("path");
 const db = require("./Db");
 const authRouter = require("./routes/auth");
 const projectRouter = require("./routes/project");
@@ -17,8 +18,8 @@ app.use(cors());
 app.use("/auth", authRouter);
 app.use("/projects", projectRouter);
 
-app.get("/", (req, res) => {
-  res.send("Hey");
+app.get("/", async (req, res) => {
+  res.sendFile(path.join(__dirname, "./index.html"));
 });
 
 // Start the server
