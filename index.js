@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// Set up routes
-app.use("/auth", authRouter);
-app.use("/projects", projectRouter);
+// // Set up routes
+// app.use("/auth", authRouter);
+// app.use("/projects", projectRouter);
 
 // Catch all handler for all other request.
 app.use("*", (req, res) => {
