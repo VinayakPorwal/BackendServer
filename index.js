@@ -1,10 +1,10 @@
 // Require the necessary modules
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const path = require("path");
+// const path = require("path");
 // const db = require("./Db");
-const authRouter = require("./routes/auth");
-const projectRouter = require("./routes/project");
+// const authRouter = require("./routes/auth");
+// const projectRouter = require("./routes/project");
 
 const express = require("express");
 const app = express();
